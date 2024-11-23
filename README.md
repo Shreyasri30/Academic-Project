@@ -14,6 +14,7 @@ This is my first project on GitHub! I am using this repository to practice Git a
 - Learn Git commands like `add`, `commit`, `push`, and `pull`.
 - Understand branching, merging, and resolving conflicts.
 - Practice writing clean and understandable code.
+- Get hands on coding experience
 
 ## Technologies Used
 - **Git**: For version control.
