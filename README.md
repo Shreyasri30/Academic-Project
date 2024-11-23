@@ -11,6 +11,7 @@ This is my first project on GitHub! I am using this repository to practice Git a
 5. [Future Plans](#future-plans)
 
 ## Goals
+- Learn basics of Git
 - Learn Git commands like `add`, `commit`, `push`, and `pull`.
 - Understand branching, merging, and resolving conflicts.
 - Practice writing clean and understandable code.
