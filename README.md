@@ -1,4 +1,4 @@
-# FirstProject
+# Practice Project
 
 ## Description
 This is my first project on GitHub! I am using this repository to practice Git and GitHub as a student. The goal of this project is to become familiar with version control, collaboration, and coding workflows.
