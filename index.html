@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone"></script>
+  <script type="text/babel">
+    // Your React code here
+    const { useState } = React;
+
+    function App() {
+      const [task, setTask] = useState('');
+      const [tasks, setTasks] = useState([]);
+
+      const addTask = () => {
+        if (task) {
+          setTasks([...tasks, task]);
+          setTask('');
+        }
+      };
+
+      const deleteTask = (taskToDelete) => {
+        setTasks(tasks.filter((task) => task !== taskToDelete));
+      };
+
+      return (
+        <div>
+          <h1>To-Do List</h1>
+          <input 
+            type="text" 
+            value={task} 
+            onChange={(e) => setTask(e.target.value)} 
+            placeholder="Add a new task"
+          />
+          <button onClick={addTask}>Add Task</button>
+
+          <ul>
+            {tasks.map((task, index) => (
+              <li key={index}>
+                {task}
+                <button onClick={() => deleteTask(task)}>Delete</button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
+
