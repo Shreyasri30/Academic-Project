@@ -24,7 +24,7 @@ This is my first project on GitHub! I am using this repository to practice Git a
 ## How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/shreyasri30/FirstProject.git
+   git clone https://github.com/shreyasri30/Academic-Project.git
 
 2. URLs of programs:
    
